@@ -72,6 +72,10 @@ git submodule update --init
 # if there are nested submodules:
 git submodule update --init --recursive
 ```
+* Install fuse library:
+```
+sudo apt-get install libjsoncpp-dev
+```
 
 Building:
 =========
