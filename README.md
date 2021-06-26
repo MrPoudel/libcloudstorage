@@ -49,6 +49,30 @@ Requirements:
 * [`libcryptopp`](https://www.cryptopp.com/) (optional, required for `AmazonS3`)
 * [`mega`](https://github.com/meganz/sdk) (optional, required for `mega.nz`)
 
+Installation commands for Ubuntu:
+=================================
+
+* Install json: 
+```
+sudo apt-get install libjsoncpp-dev
+```
+* Install tinyxml2: 
+```sudo apt-get install libtinyxml2-dev
+```
+* Install curl from development : 
+```sudo apt-get install libcurl4-openssl-dev
+```
+* Install microhttpd: 
+```
+sudo apt install libmicrohttpd-dev
+```
+* Update the submodules in the repo:
+```
+git submodule update --init
+# if there are nested submodules:
+git submodule update --init --recursive
+```
+
 Building:
 =========
 
