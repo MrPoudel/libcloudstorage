@@ -77,6 +77,34 @@ git submodule update --init --recursive
 sudo apt-get install libjsoncpp-dev
 ```
 
+Basic instruction for creating devices mounting point:
+======================================================
+* List the name of the usb/external disk 
+```
+sudo fdisk -l 
+
+Let's say it's /dev/sda1
+```
+
+* Mount to the specific location
+```
+sudo mount /dev/sda1/ /home/bal/pen_drive
+
+#Note: /home/bal/pen_drive must exist.
+```
+
+* Do the operatins on ../pen_drive
+```
+#e.g. mkdir etc.
+```
+
+* Unmount the disk
+```
+sudo umount  /dev/sda1
+
+#That's it.
+```
+
 Building:
 =========
 
